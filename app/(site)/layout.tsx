@@ -12,8 +12,8 @@ import GoogleAnalytics from "@/components/utils/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner";
 import { draftMode } from "next/headers";
 import LiveVisualEditing from "@/components/LiveVisualEditing";
-// export const revalidate = 6000;
-export const revalidate = 60;
+export const revalidate = 6000;
+// export const revalidate = 60;
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -31,7 +31,7 @@ const opensans = Open_Sans({
 export async function Metadata() {
   const hero: heroType[] = await getHero();
   return {
-    title: "Perlini Property Maintenance",
+    title: "Perlini Property Management",
     description: removelineBreakCodeFromHTML(hero[0].heroHeading[0]),
     openGraph: {
       images: thumbnail.src,
@@ -55,11 +55,11 @@ export default async function RootLayout({
   const jsonLd: WithContext<LocalBusiness> = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://www.roscoandperlini.co.uk/",
+    "@id": "https://www.perlini.co.uk/",
     name: meta[0].companyName,
     description: meta[0].description,
-    url: "https://www.roscoandperlini.co.uk/",
-    logo: "https://www.roscoandperlini.co.uk/favicon.ico",
+    url: "https://www.perlini.co.uk/",
+    logo: "https://www.perlini.co.uk/favicon.ico",
     address: {
       "@type": "PostalAddress",
       streetAddress: meta[0].location.streetAddress,

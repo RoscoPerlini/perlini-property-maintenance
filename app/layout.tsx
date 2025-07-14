@@ -30,14 +30,14 @@ export async function metadata() {
   });
 
   return {
-    title: "Perlini Property Maintenance",
+    title: "Perlini Property Management",
     description: titleWithLineBreaks,
     openGraph: {
       images: thumbnail.src,
     },
     twitter: {
       card: "summary_large_image", // Or "summary" depending on your preferred card type
-      title: "Perlini Property Maintenance",
+      title: "Perlini Property Management",
       description: titleWithLineBreaks,
       image: thumbnail.src,
     },

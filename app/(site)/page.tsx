@@ -59,7 +59,7 @@ export async function metadata() {
   });
 
   return {
-    title: `Perlini Property Maintenance | ${hero[0]?.pageMetadata?.pageTitle || "Homepage"}`,
+    title: `Perlini Property Management | ${hero[0]?.pageMetadata?.pageTitle || "Homepage"}`,
     description: hero[0].pageMetadata?.pageDescription || titleWithLineBreaks,
     openGraph: {
       images: thumbnail.src,

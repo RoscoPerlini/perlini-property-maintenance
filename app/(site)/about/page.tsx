@@ -42,7 +42,7 @@ export async function metadata() {
   const aboutContent: aboutPageType[] = await getAboutPageContent();
 
   return {
-    title: `Perlini Property Maintenance | ${aboutContent[0]?.aboutPage?.pageMetadata?.pageTitle || "About Us"}`,
+    title: `Perlini Property Management | ${aboutContent[0]?.aboutPage?.pageMetadata?.pageTitle || "About Us"}`,
 
     description:
       aboutContent[0]?.aboutPage?.pageMetadata?.pageDescription ||

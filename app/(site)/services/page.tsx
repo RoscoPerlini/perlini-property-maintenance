@@ -30,7 +30,7 @@ export async function metadata() {
     getServicesPageContent
   );
   return {
-    title: `Perlini Property Maintenance | ${servicesContent[0]?.ServicesPage?.pageMetadata?.pageTitle || "Services"}`,
+    title: `Perlini Property Management | ${servicesContent[0]?.ServicesPage?.pageMetadata?.pageTitle || "Services"}`,
     // description: removelineBreakCodeFromHTML(
     //   servicesContent[0].ServicesPage.pageHeading
     // ),

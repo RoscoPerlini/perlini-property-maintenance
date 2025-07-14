@@ -21,7 +21,7 @@ import ContactSectionPreview from "@/components/previewComponents/ContactSection
 export async function metadata() {
   const contactPageContent: contactPageType[] = await getContactUsPageContent();
   return {
-    title: `Perlini Property Maintenance | ${contactPageContent[0]?.ContactPage?.pageMetadata?.pageTitle || "Contact Us"}`,
+    title: `Perlini Property Management | ${contactPageContent[0]?.ContactPage?.pageMetadata?.pageTitle || "Contact Us"}`,
     description:
       contactPageContent[0]?.ContactPage?.pageMetadata?.pageDescription ||
       removelineBreakCodeFromHTML(

@@ -361,7 +361,7 @@ export default function Footer() {
 
           <h4 className="text-center font-light tracking-[0.02em] text-[1.4rem] mt-16 text-theme-dark small:text-right small:mt-[6rem]">
             {" "}
-            &copy; {new Date().getFullYear()} Perlini Property Maintenance Ltd
+            &copy; {new Date().getFullYear()} Perlini Property Management Ltd
           </h4>
         </div>
       </div>
