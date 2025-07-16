@@ -11,7 +11,7 @@ export default function Testimonials({
   // const testimonials: testimonialsType[] = await getTestimonials();
 
   return (
-    <section className="mt-20">
+    <section className="my-section-gap">
       <div className="small:px-layout-small">
         <div className="relative text-theme-dark bg-[#f8f8f8] w-full pt-[3.5rem] pb-40 px-[5%]  xsmall:pt-[5rem] xsmall:pb-[16rem] small:pb-32 medium:max-w-[1120px] medium:mx-auto">
           <h2 className="w-[95%] leading-[1.2em]">

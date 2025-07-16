@@ -38,9 +38,15 @@ const homepage = {
       of: [{ type: "block" }],
     },
     {
-      name: "heroButtonText",
-      title: "Hero Button Text",
-      description: "Text shown on Hero CTA",
+      name: "heroServicesButtonText",
+      title: "Hero 'Services' Button Text",
+      description: "Text shown on Hero CTA button",
+      type: "string",
+    },
+    {
+      name: "heroContactButtonText",
+      title: "Hero 'Contact Us' Button Text",
+      description: "Text shown on Hero CTA button",
       type: "string",
     },
     {
@@ -246,7 +252,7 @@ const homepage = {
       fields: [
         {
           name: "awardsSectionSubTitle",
-          title: "Testimonials Sub Title",
+          title: "Awards Sub Title",
           type: "string",
           description:
             "--add '\\n'(desktop), '\\tabletn' or '\\mobilen' to the text where you want text to return on a new line.",
@@ -257,6 +263,14 @@ const homepage = {
           description:
             "add '\\n' to the text where you want text to return on a new line.  *NOTE - this only applies on mobile screens",
           type: "string",
+        },
+        {
+          name: "awardsSectionText",
+          title: "Awards Section Text",
+          description:
+            "add content to the text region under the awards section titles",
+          type: "array",
+          of: [{ type: "block" }],
         },
         {
           name: "awardsList",

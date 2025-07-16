@@ -31,7 +31,8 @@ export type heroType = {
   pageMetadata: PageMetadata;
   heroHeading: string;
   heroText: PortableTextBlock[];
-  heroButtonText: string;
+  heroServicesButtonText: string;
+  heroContactButtonText: string;
   heroImage: {
     alt: string;
     image: string;
@@ -375,6 +376,7 @@ export type awardsType = {
   awardsSection: {
     awardsSectionSubTitle: string;
     awardsSectionTitle: string;
+    awardsSectionText: PortableTextBlock;
     awardsList: Array<{
       awardDate: string;
       awardTitle: string;

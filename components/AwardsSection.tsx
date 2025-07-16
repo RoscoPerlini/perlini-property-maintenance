@@ -3,6 +3,7 @@ import type { awardsType } from "@/types";
 // import Image from "next/image";
 import { AwardsSwiper } from "./swiper/Swipers";
 import { getTextWithLineBreaks } from "./utils/getTextWithLineBreaks";
+import { PortableText } from "@portabletext/react";
 
 export default function AwardsSection({ awards }: { awards: awardsType[] }) {
   // const awards: awardsType[] = await getAwards();
@@ -37,15 +38,15 @@ export default function AwardsSection({ awards }: { awards: awardsType[] }) {
               <div className="hidden xsmall:block">
                 {titleWithoutLineBreaks.split("\n").map((line, index) => {
                   return (
-                    <h2 key={index} className="pt-[1.5rem] pb-[3rem]">
+                    <h2 key={index} className="pt-[1.5rem]">
                       {line}
                     </h2>
                   );
                 })}
               </div>
-              {/* <h2 className="pt-[1.5rem] pb-[3rem]">
-                {award.awardsSection.awardsSectionTitle}
-              </h2> */}
+              <div className="awards__section__text__region max-w-[832px] mx-auto pt-[0.5rem] pb-[4rem]">
+                <PortableText value={award.awardsSection.awardsSectionText} />
+              </div>
             </div>
             <div className="small:pl-layout-small">
               <AwardsSwiper data={awards} />

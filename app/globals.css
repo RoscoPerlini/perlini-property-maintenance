@@ -55,7 +55,13 @@ h5 {
 p {
   font-family: var(--font-montserrat);
   font-size: 1.6rem;
-  line-height: 2.8rem;
+  line-height: 1.7em;
+  letter-spacing: 0.02em;
+
+  .homepage__hero__text__region & {
+    font-size: clamp(2rem, 2.3cqw, 3rem);
+    line-height: 1.16em;
+  }
 }
 .form-country-select {
   -webkit-appearance: none;

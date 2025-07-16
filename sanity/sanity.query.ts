@@ -66,7 +66,8 @@ export async function getHero() {
         },
       heroHeading,
       heroText,
-      heroButtonText,
+      heroServicesButtonText,
+      heroContactButtonText,
       heroImage {
         alt,
         "image": asset->url,
@@ -95,7 +96,8 @@ export const heroContent = groq`*[_type == "homepage"]{
       _id,
       heroHeading,
       heroText,
-      heroButtonText,
+      heroServicesButtonText,
+      heroContactButtonText,
       heroImage {
         alt,
         "image": asset->url,
@@ -707,6 +709,8 @@ export async function getAwards() {
       awardsSection{
         awardsSectionSubTitle,
         awardsSectionTitle,
+        awardsSectionText,
+
         awardsList[]{
           awardDate,
           awardTitle,
@@ -720,6 +724,7 @@ export const awardsContent = groq`*[_type == "homepage"] {
       awardsSection{
         awardsSectionSubTitle,
         awardsSectionTitle,
+        awardsSectionText,
         awardsList[]{
           awardDate,
           awardTitle,
@@ -732,6 +737,7 @@ export const awardList = groq`*[_type == "homepage"] {
       awardsSection{
         awardsSectionSubTitle,
         awardsSectionTitle,
+        awardsSectionText,
         awardsList[]{
           awardDate,
           awardTitle,

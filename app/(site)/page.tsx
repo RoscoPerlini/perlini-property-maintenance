@@ -17,7 +17,7 @@ import {
   getIntro,
   getMailingListCta,
   getTestimonials,
-  getTotPromo,
+  // getTotPromo,
   heroContent,
   introContent,
   mailingListCta,
@@ -40,7 +40,7 @@ import { draftMode } from "next/headers";
 import HeroPreview from "@/components/previewComponents/HeroPreview";
 import IntroSectionPreview from "@/components/previewComponents/IntroSectionPreview";
 import MailingListCtaPreview from "@/components/previewComponents/MailingListCtaPreview";
-import TotPromoPreview from "@/components/previewComponents/TotPromoPreview";
+// import TotPromoPreview from "@/components/previewComponents/TotPromoPreview";
 import TestimonialsPreview from "@/components/previewComponents/TestimonialsPreview";
 import AwardsSectionPreview from "@/components/previewComponents/AwardsSectionPreview";
 import ContactSectionPreview from "@/components/previewComponents/ContactSectionPreview";
@@ -74,7 +74,7 @@ export default async function Home() {
   const hero: heroType[] = await getHero();
   const intro: introType[] = await getIntro();
   const mailingList: mailingListType[] = await getMailingListCta();
-  const totPromo: TotPromoType[] = await getTotPromo();
+  // const totPromo: TotPromoType[] = await getTotPromo();
   const testimonials: testimonialsType[] = await getTestimonials();
   const awards: awardsType[] = await getAwards();
   const contactContent: contactType[] = await getContactContent();
@@ -144,6 +144,7 @@ export default async function Home() {
       ) : (
         <Hero content={hero} />
       )}
+
       {draftMode().isEnabled ? (
         <IntroSectionPreview
           initial={initialIntroContent.data[0]}
@@ -152,38 +153,11 @@ export default async function Home() {
       ) : (
         <IntroSection intro={intro} />
       )}
+
       <section className="my-section-gap xsmall:my-section-gap-xsmall small:my-section-gap-small ">
         <ServiceImageLinkSwiper />
       </section>
-      <section className="hidden xsmall:block my-section-gap xsmall:my-section-gap-xsmall small:my-section-gap-small">
-        {draftMode().isEnabled ? (
-          <MailingListCtaPreview
-            initial={initialmailingListCtaContent.data[0]}
-            originalContent={mailingListCta}
-          />
-        ) : (
-          <MailingListCta content={mailingList} />
-        )}
-      </section>
-      <LatestProjects />
-      <section className="my-section-gap xsmall:my-section-gap-xsmall small:my-section-gap-small">
-        {draftMode().isEnabled ? (
-          <TotPromoPreview
-            initial={initialTotPromo.data[0]}
-            originalContent={totPromoContent}
-          />
-        ) : (
-          <TotPromo totPromo={totPromo} />
-        )}
-      </section>
-      {draftMode().isEnabled ? (
-        <TestimonialsPreview
-          initial={initialTestimonialContent.data[0]}
-          originalContent={testimonialContent}
-        />
-      ) : (
-        <Testimonials testimonials={testimonials} />
-      )}
+
       <section className="mt-[5rem] my-section-gap xsmall:my-section-gap-xsmall small:my-section-gap-small">
         {draftMode().isEnabled ? (
           <AwardsSectionPreview
@@ -194,6 +168,40 @@ export default async function Home() {
           <AwardsSection awards={awards} />
         )}
       </section>
+
+      <LatestProjects />
+
+      {/* <section className="my-section-gap xsmall:my-section-gap-xsmall small:my-section-gap-small">
+        {draftMode().isEnabled ? (
+          <TotPromoPreview
+            initial={initialTotPromo.data[0]}
+            originalContent={totPromoContent}
+          />
+        ) : (
+          <TotPromo totPromo={totPromo} />
+        )}
+      </section> */}
+
+      {draftMode().isEnabled ? (
+        <TestimonialsPreview
+          initial={initialTestimonialContent.data[0]}
+          originalContent={testimonialContent}
+        />
+      ) : (
+        <Testimonials testimonials={testimonials} />
+      )}
+
+      <section className="hidden xsmall:block my-section-gap xsmall:my-section-gap-xsmall small:my-section-gap-small">
+        {draftMode().isEnabled ? (
+          <MailingListCtaPreview
+            initial={initialmailingListCtaContent.data[0]}
+            originalContent={mailingListCta}
+          />
+        ) : (
+          <MailingListCta content={mailingList} />
+        )}
+      </section>
+
       {draftMode().isEnabled ? (
         <ContactSectionPreview
           initial={initialContactContent.data[0]}
