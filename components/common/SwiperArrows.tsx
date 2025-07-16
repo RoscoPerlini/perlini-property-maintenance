@@ -5,9 +5,19 @@ export const SwiperArrowNext = ({
 }) => {
   return (
     <div
-      className={` ${swiperDivName} h-[56px] w-[56px] bg-white flex justify-center items-center rounded-md`}
+      className={` ${swiperDivName} relative h-[56px] w-[56px] flex justify-center items-center`}
     >
       <svg
+        className="nav__bg__svg"
+        viewBox="0 0 57 57"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M56.408 0V49.8602L45.095 56.0489H6.93661e-06V6.15299L10.911 0H56.408Z" />
+      </svg>
+
+      <svg
+        className="nav__icon relative"
         width="16"
         height="14"
         viewBox="0 0 16 14"
@@ -33,13 +43,20 @@ export const SwiperArrowPrev = ({
 }) => {
   return (
     <div
-      className={` ${swiperDivName} h-[56px] w-[56px] bg-white flex justify-center items-center rounded-md`}
+      className={` ${swiperDivName} relative h-[56px] w-[56px] flex justify-center items-center`}
     >
       <svg
+        className="nav__bg__svg"
+        viewBox="0 0 57 57"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M56.408 0V49.8602L45.095 56.0489H6.93661e-06V6.15299L10.911 0H56.408Z" />
+      </svg>
+      <svg
+        className="nav__icon relative"
         width="16"
         height="14"
         viewBox="0 0 16 14"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
