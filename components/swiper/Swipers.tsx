@@ -727,7 +727,7 @@ export const ServiceExtrasSwiper = ({
         slidesPerView="auto"
         freeMode={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        wrapperClass="filterBtn__swiper filterBtn__swiper--service-extras"
+        wrapperClass="filterBtn__swiper filterBtn__swiper--service-extras pt-[0.5em]"
         className="flex flex-row mt-[7rem] "
       >
         {additionalInfo?.map((category, index) => {

@@ -107,12 +107,14 @@ const FilterButton: React.FC<FilterButtonProps> = ({
         </svg>
       </div>
 
-      <div className="relative flex justify-center items-center gap-6 mx-auto min-w-[176px] px-[1.4rem] small:min-w-0">
+      <div className="relative flex justify-center items-center gap-6 mx-auto min-w-[176px] px-[1.4rem] small:min-w-0 ">
         {serviceSubFilter && (
           <General fill="fill-white" hover="group-hover:fill-[#6015EF]" />
         )}
 
-        <h5 className="uppercase text-center">{text}</h5>
+        <h5 className="uppercase text-center group-hover:text-[#6015EF]">
+          {text}
+        </h5>
       </div>
     </div>
   );
