@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://roscoandperlini.co.uk/sitemap.xml",
+    sitemap: "https://perlini.co.uk/sitemap.xml",
   };
 }

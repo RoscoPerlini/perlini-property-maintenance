@@ -39,6 +39,12 @@ const innerPageContent = {
           type: "string",
         },
         {
+          name: "pageHeadingSubtext",
+          title: "About Page Hero Subtext",
+          type: "array",
+          of: [{ type: "block" }],
+        },
+        {
           name: "pageImage",
           title: "About Page Hero Image",
           type: "image",
@@ -147,6 +153,12 @@ const innerPageContent = {
           type: "string",
         },
         {
+          name: "pageHeadingSubtext",
+          title: "Services Page Hero Subtext",
+          type: "array",
+          of: [{ type: "block" }],
+        },
+        {
           name: "pageImage",
           title: "Services Page Hero Image",
           type: "image",
@@ -230,6 +242,12 @@ const innerPageContent = {
           type: "string",
         },
         {
+          name: "pageHeadingSubtext",
+          title: "Projects Page Hero Subtext",
+          type: "array",
+          of: [{ type: "block" }],
+        },
+        {
           name: "pageImage",
           title: "Projects Page Hero Image",
           type: "image",
@@ -294,6 +312,12 @@ const innerPageContent = {
           title: "FAQ Page Hero Heading",
           description: "Heading for the FAQ Page",
           type: "string",
+        },
+        {
+          name: "pageHeadingSubtext",
+          title: "FAQ Page Hero Subtext",
+          type: "array",
+          of: [{ type: "block" }],
         },
         {
           name: "pageImage",
@@ -365,6 +389,12 @@ const innerPageContent = {
           description:
             "Heading for the Contact Page. --add '\\n'(desktop), '\\tabletn' or '\\mobilen' to the text where you want text to return on a new line.",
           type: "string",
+        },
+        {
+          name: "pageHeadingSubtext",
+          title: "Contact Page Hero Subtext",
+          type: "array",
+          of: [{ type: "block" }],
         },
         {
           name: "pageImage",

@@ -5,6 +5,7 @@ import { SanityDocument } from "next-sanity";
 import { getServicesPageContent } from "@/sanity/sanity.query";
 import InnerHero from "../InnerHero";
 import { useEffect, useState } from "react";
+import { PortableTextBlock } from "sanity";
 
 interface PageData {
   pageHeading: string;
@@ -50,6 +51,7 @@ export default function InnerHeroPreview({
     <div>
       <InnerHero
         title={heroData?.[pageVariable]?.pageHeading}
+        subtext={heroData?.[pageVariable]?.pageHeadingSubtext}
         image={heroData?.[pageVariable]?.pageImage}
         sectionTitle={sectionTitle}
         imageAltText={heroData?.[pageVariable]?.pageImage?.alt}

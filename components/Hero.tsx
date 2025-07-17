@@ -18,7 +18,7 @@ export default function Hero({ content }: { content: heroType[] }) {
               <p className="homepage__hero__company__name font-bold text-[1.6rem] font-body mb-[0.4em]">
                 Perlini Property Management
               </p>
-              <h1 className="font-bold text-balance xsmall:text-[clamp(2.8rem,4.3vw,3.6rem)] small:text-[clamp(2.7rem,3.1vw,4rem)]">
+              <h1 className="font-bold xsmall:text-[clamp(2.8rem,4.3vw,3.6rem)] small:text-[clamp(2.7rem,3.1vw,4rem)]">
                 {getTextWithLineBreaks(content[0].heroHeading)}
               </h1>
             </div>
@@ -28,7 +28,7 @@ export default function Hero({ content }: { content: heroType[] }) {
               <PortableText value={content[0].heroText} />
             </div>
             <div className="hero__cta__wrapper flex flex-wrap justify-start gap-x-[4rem] small:gap-x-[1rem] medium:gap-x-[4rem] gap-y-[1rem] mt-[3.5rem] w-[96%] ">
-              <div className="w-full xsmall:w-fit grow ">
+              <div className="w-full xsmall:w-fit grow xsmall:max-w-[220px]">
                 <ButtonLinkNew
                   destination="/services"
                   text={content[0].heroServicesButtonText}
@@ -37,7 +37,7 @@ export default function Hero({ content }: { content: heroType[] }) {
                   hoverEffect="fill-col"
                 />
               </div>
-              <div className="w-full xsmall:w-fit grow ">
+              <div className="w-full xsmall:w-fit grow  xsmall:max-w-[220px]">
                 <ButtonLinkNew
                   destination="/contact"
                   text={content[0].heroContactButtonText}

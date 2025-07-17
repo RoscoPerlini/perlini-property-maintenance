@@ -71,7 +71,7 @@ export default function ContactForm({
       className=" flex flex-col justify-between w-full small:w-[512px] font-body"
     >
       <div className=" w-full h-fit flex flex-col gap-[0.5rem] text-[1.4rem]">
-        <label className="text-white" htmlFor="name">
+        <label className="text-white mb-[0.4rem]" htmlFor="name">
           Name
         </label>
         <div className="relative">
@@ -113,8 +113,8 @@ export default function ContactForm({
           </p>
         )}
       </div>
-      <div className="flex flex-col gap-[0.5rem] pt-[2rem] text-[1.4rem]">
-        <label className="text-white" htmlFor="email">
+      <div className="flex flex-col gap-[0.5rem] pt-[1rem] text-[1.4rem]">
+        <label className="text-white mb-[0.4rem]" htmlFor="email">
           Email
         </label>
         <div className="relative">
@@ -166,8 +166,8 @@ export default function ContactForm({
           </p>
         )}
       </div>
-      <div className="flex flex-col gap-[0.5rem] pt-[2rem] text-[1.4rem]">
-        <label className="text-white" htmlFor="phone">
+      <div className="flex flex-col gap-[0.5rem] pt-[1rem] text-[1.4rem]">
+        <label className="text-white mb-[0.4rem]" htmlFor="phone">
           Phone number
         </label>
         <div className="relative">
@@ -228,8 +228,8 @@ export default function ContactForm({
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-[0.5rem] pt-[2rem] text-[1.4rem]">
-        <label className="text-white " htmlFor="message">
+      <div className="flex flex-col gap-[0.5rem] pt-[1rem] text-[1.4rem]">
+        <label className="text-white mb-[0.4rem]" htmlFor="message">
           How can we help?
         </label>
         <div className="relative">
@@ -274,9 +274,9 @@ export default function ContactForm({
       <div className="mt-[3rem]">
         <button
           type="submit"
-          className="form__button__link relative block py-[1.1rem] text-white transition duration-300 hover:duration-300 group w-[103%]"
+          className="form__button__link relative block py-[1.1rem] text-white transition duration-300 hover:duration-300 group w-[103%] min-h-[50px]"
         >
-          <div className=" flex justify-center items-center gap-6 mx-auto h-full w-full px-8 xsmall:px-11 min-w-[140px] xsmall:min-w-[176px]">
+          <div className="flex justify-center items-center gap-6 mx-auto h-full w-full px-8 xsmall:px-11 min-w-[140px] xsmall:min-w-[176px]">
             <svg
               className={`button__link__svg -z-0 duration-300  group-hover:fill-theme-purple  `}
               viewBox="0 0 512 51"

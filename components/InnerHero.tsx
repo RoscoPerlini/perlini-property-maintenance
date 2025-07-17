@@ -13,6 +13,7 @@ import { getTextWithLineBreaks } from "./utils/getTextWithLineBreaks";
 import ButtonLinkNew from "./common/ButtonLinkNew";
 import mapMarker from "../app/(site)/assets/images/marker.png";
 import { PortableText } from "@portabletext/react";
+import { PortableTextBlock } from "sanity";
 
 export default function InnerHero({
   title,
@@ -21,6 +22,7 @@ export default function InnerHero({
   image,
   pageNumber,
   imageCaptionText,
+  subtext,
 }: {
   title: string;
   sectionTitle: string;
@@ -28,6 +30,7 @@ export default function InnerHero({
   image?: SanityImageQueryResult | undefined;
   pageNumber?: string;
   imageCaptionText?: any;
+  subtext: PortableTextBlock[];
 }) {
   return (
     <section
@@ -41,7 +44,7 @@ export default function InnerHero({
             {removelineBreakCodeFromHTML(sectionTitle)}
           </h3>
           <div className="w-full order-last small:order-first px-[5%] small:px-0">
-            <div className="w-full relative pl-0 small:pr-0 xsmall:mt-[4rem] xsmall:pb-[3rem] xsmall:text-[clamp(3.5rem,6.3vw,4rem)] small:text-[clamp(3.2rem,2.8vw,4rem)] large:static pb-12 small:pl-layout-small">
+            <div className="w-full relative pl-0 small:pr-0 xsmall:mt-[0.7em] xsmall:pb-[3rem] xsmall:text-[clamp(3.5rem,6.3vw,4rem)] small:text-[clamp(3.2rem,2.8vw,4rem)] large:static pb-12 small:pl-layout-small">
               {/* xsmall:pl-[3.7rem] */}
               <h1 className="absolute -left-5 hidden xsmall:block xsmall:-translate-x-[5.3vw] small:-translate-x-0 w-fit h-auto font-body small:top-0 large:top-[26rem] mt-[0.1rem] ">
                 {pageNumber}
@@ -53,10 +56,13 @@ export default function InnerHero({
               <h1 className="inner__hero__title pt-[3rem] mx-auto max-w-[383px] font-bold pb-[2rem] xsmall:max-w-[80%] xsmall:pt-0 xsmall:pb-0 small:ml-0 small:w-[clamp(400px,43vw,558px)] small:pr-[2rem]">
                 {title && getTextWithLineBreaks(title)}
               </h1>
+              <div className="homepage__hero__text__region small:max-w-[48rem] pt-[3.7rem] pb-[0.6rem]">
+                <PortableText value={subtext} />
+              </div>
             </div>
           </div>
           {pageNumber !== "06" && (
-            <div className="w-full mx-auto px-[8%] xsmall:px-0 pb-[5rem] xsmall:pb-[6.5rem] xsmall:w-fit xsmall:mx-auto small:ml-layout-small">
+            <div className=" inner__button__container w-full mx-auto px-[8%] xsmall:px-0 pb-[5rem] xsmall:pb-[6.5rem] xsmall:w-fit xsmall:mx-auto small:ml-layout-small">
               {/* xsmall:ml-[7.5rem] */}
               <ButtonLinkNew
                 theme="dark"

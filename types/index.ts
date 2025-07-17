@@ -412,6 +412,7 @@ export type aboutPageType = {
   aboutPage: {
     _id: string;
     pageHeading: string;
+    pageHeadingSubtext: PortableTextBlock[];
     pageMetadata: PageMetadata;
     pageImage: {
       alt: string;
@@ -496,6 +497,7 @@ export type servicesPageType = {
   ServicesPage: {
     // _id: string;
     pageHeading: string;
+    pageHeadingSubtext: PortableTextBlock[];
     pageMetadata: PageMetadata;
     pageImage: {
       alt: string;
@@ -549,6 +551,7 @@ export type projectsPageType = {
   ProjectsPage: {
     _id: string;
     pageHeading: string;
+    pageHeadingSubtext: PortableTextBlock[];
     pageMetadata: PageMetadata;
     pageImage: {
       alt: string;
@@ -599,6 +602,7 @@ export type faqPageType = {
   FaqPage: {
     _id: string;
     pageHeading: string;
+    pageHeadingSubtext: PortableTextBlock[];
     pageMetadata: PageMetadata;
     pageImage: {
       alt: string;
@@ -631,6 +635,7 @@ export type contactPageType = {
   ContactPage: {
     _id: string;
     pageHeading: string;
+    pageHeadingSubtext: PortableTextBlock[];
     pageMetadata: PageMetadata;
     pageImage: {
       alt: string;

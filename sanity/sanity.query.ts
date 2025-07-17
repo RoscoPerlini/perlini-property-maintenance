@@ -781,7 +781,7 @@ export async function getAboutPageContent() {
       aboutPage {
         _id,
         pageHeading,
-
+        pageHeadingSubtext,
         pageMetadata {
           pageTitle,
           pageDescription
@@ -844,6 +844,7 @@ export const aboutPageContent = groq`*[_type == "innerPage"] {
       aboutPage {
         _id,
         pageHeading,
+        pageHeadingSubtext,
         pageImage {
           alt,
         "image": asset->url,
@@ -878,6 +879,7 @@ export const getServicesPageContent = groq`*[_type == "innerPage" && defined(Ser
       ServicesPage {
         // _id,
         pageHeading,
+        pageHeadingSubtext,
         pageMetadata {
           pageTitle,
           pageDescription
@@ -942,6 +944,7 @@ export async function getProjectsPageContent() {
       ProjectsPage {
         _id,
         pageHeading,
+        pageHeadingSubtext,
         pageImage {
             alt,
           "image": asset->url,
@@ -995,6 +998,7 @@ export const projectsPageContent = groq`*[_type == "innerPage"] {
       ProjectsPage {
         _id,
         pageHeading,
+        pageHeadingSubtext,
         pageImage {
             alt,
           "image": asset->url,
@@ -1026,6 +1030,7 @@ export async function getFaqPageContent() {
        _id,
       FaqPage {
         pageHeading,
+        pageHeadingSubtext,
         pageMetadata {
           pageTitle,
           pageDescription
@@ -1084,6 +1089,7 @@ export const faqPageInitialContent = groq`*[_type == "innerPage"] {
        _id,
       FaqPage {
         pageHeading,
+        pageHeadingSubtext,
         pageImage {
             alt,
           "image": asset->url,
@@ -1154,6 +1160,7 @@ export async function getContactUsPageContent() {
        _id,
       ContactPage {
         pageHeading,
+        pageHeadingSubtext,
         pageMetadata {
           pageTitle,
           pageDescription
@@ -1189,6 +1196,7 @@ export const contactPageInitialContent = groq`*[_type == "innerPage"] {
        _id,
       ContactPage {
         pageHeading,
+        pageHeadingSubtext,
         serviceAreas,
       }
     }

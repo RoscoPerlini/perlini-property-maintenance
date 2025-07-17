@@ -94,6 +94,7 @@ export default async function About() {
           title={aboutContent[0].aboutPage.pageHeading}
           image={aboutContent[0].aboutPage.pageImage}
           sectionTitle="about us"
+          subtext={aboutContent[0].aboutPage.pageHeadingSubtext}
           imageAltText={aboutContent[0].aboutPage.pageImage.alt}
           pageNumber="02"
         />

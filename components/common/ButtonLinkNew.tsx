@@ -169,9 +169,9 @@ const ButtonLinkNew = ({
       </div>
 
       <div
-        className={`flex justify-center items-center gap-6 mx-auto h-full w-full max-w-fit ${
+        className={`button__link__content flex justify-center items-center gap-6 mx-auto h-full w-full max-w-fit ${
           ctaType == "email" || "phone" ? `px-[2.2rem]` : `px-11`
-        } min-w-[210px] z-10 relative`}
+        } min-w-[176px] z-10 relative`}
       >
         {btnType}
         <span className="uppercase text-center font-[700] font-headings tracking-[0.06em] text-[1.6rem] bg-transparent hover:bg-transparent">
