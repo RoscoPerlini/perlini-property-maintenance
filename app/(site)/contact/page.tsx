@@ -67,6 +67,7 @@ export default async function contact() {
           title={contactPageContent[0].ContactPage.pageHeading}
           sectionTitle="contact us"
           pageNumber="06"
+          subtext={contactPageContent[0].ContactPage.pageHeadingSubtext}
           image={contactPageContent[0].ContactPage.pageImage}
           imageCaptionText={contactPageContent[0].ContactPage.serviceAreas}
           imageAltText={contactPageContent[0].ContactPage.pageImage.alt}

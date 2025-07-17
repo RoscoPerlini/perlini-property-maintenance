@@ -86,6 +86,7 @@ export default async function Services() {
           title={servicesPageContent[0].ServicesPage.pageHeading}
           image={servicesPageContent[0].ServicesPage.pageImage}
           sectionTitle="services"
+          subtext={servicesPageContent[0].ServicesPage.pageHeadingSubtext}
           imageAltText={servicesPageContent[0].ServicesPage.pageImage.alt}
           pageNumber="03"
         />

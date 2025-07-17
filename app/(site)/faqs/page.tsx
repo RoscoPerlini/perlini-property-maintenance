@@ -94,6 +94,7 @@ export default async function faqs() {
             title={faqPageContent[0].FaqPage.pageHeading}
             image={faqPageContent[0].FaqPage.pageImage}
             sectionTitle="FAQ's"
+            subtext={faqPageContent[0].FaqPage.pageHeadingSubtext}
             imageAltText={faqPageContent[0].FaqPage.pageImage.alt}
             pageNumber="05"
           />

@@ -30,7 +30,8 @@ export default function InnerHero({
   image?: SanityImageQueryResult | undefined;
   pageNumber?: string;
   imageCaptionText?: any;
-  subtext: PortableTextBlock[];
+  // subtext?: PortableTextBlock[] | undefined;
+  subtext?: any;
 }) {
   return (
     <section

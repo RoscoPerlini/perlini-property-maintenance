@@ -82,6 +82,7 @@ export default async function Projects() {
             title={projectsContent[0].ProjectsPage.pageHeading}
             image={projectsContent[0].ProjectsPage.pageImage}
             sectionTitle="projects"
+            subtext={projectsContent[0].ProjectsPage.pageHeadingSubtext}
             imageAltText={projectsContent[0].ProjectsPage.pageImage.alt}
             pageNumber="04"
           />
