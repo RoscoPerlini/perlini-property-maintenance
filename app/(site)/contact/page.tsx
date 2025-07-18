@@ -1,15 +1,16 @@
 import ContactSection from "@/components/ContactSection";
 import InnerHero from "@/components/InnerHero";
 import LatestProjects from "@/components/LatestProjects";
-import TotPromo from "@/components/TotPromo";
+// import TotPromo from "@/components/TotPromo";
 import {
   contactPageInitialContent,
   contactUsContent,
   getContactContent,
   getContactUsPageContent,
-  getTotPromo,
+  // getTotPromo,
 } from "@/sanity/sanity.query";
-import type { contactPageType, contactType, TotPromoType } from "@/types";
+import type { contactPageType, contactType } from "@/types";
+// import type { TotPromoType  } from "@/types";
 import contactMap from "../assets/images/contact_map.png";
 import { removelineBreakCodeFromHTML } from "@/components/utils/lineBreaks";
 import InnerHeroPreview from "@/components/previewComponents/InnerHeroPreview";
@@ -37,7 +38,7 @@ export default async function contact() {
   const contactPageContent: contactPageType[] = await getContactUsPageContent();
   const contactContent: contactType[] = await getContactContent();
 
-  const totPromo: TotPromoType[] = await getTotPromo();
+  // const totPromo: TotPromoType[] = await getTotPromo();
   const initialContactPageContent = await loadQuery<SanityDocument>(
     contactPageInitialContent,
     {},
@@ -86,9 +87,9 @@ export default async function contact() {
       </div>
 
       <LatestProjects />
-      <div className="my-section-gap mb-0">
+      {/* <div className="my-section-gap mb-0">
         <TotPromo totPromo={totPromo} />
-      </div>
+      </div> */}
     </main>
   );
 }

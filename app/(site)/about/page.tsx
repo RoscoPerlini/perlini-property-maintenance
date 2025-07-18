@@ -3,7 +3,7 @@ import ContactSection from "@/components/ContactSection";
 import InnerHero from "@/components/InnerHero";
 import MailingListCta from "@/components/MailingListCta";
 import ServiceImageLinkSwiper from "@/components/ServiceImageLinkSwiper";
-import TotPromo from "@/components/TotPromo";
+// import TotPromo from "@/components/TotPromo";
 import LatestProjects from "@/components/LatestProjects";
 import BgDots from "@/components/assets/BgDots";
 import {
@@ -13,7 +13,7 @@ import {
   getAwards,
   awardList,
   getMailingListCta,
-  getTotPromo,
+  // getTotPromo,
   getContactContent,
 } from "@/sanity/sanity.query";
 import type {
@@ -21,7 +21,7 @@ import type {
   awardsType,
   contactType,
   mailingListType,
-  TotPromoType,
+  // TotPromoType,
 } from "@/types";
 import { PortableText } from "@portabletext/react";
 
@@ -57,7 +57,7 @@ export default async function About() {
   const aboutContent: aboutPageType[] = await getAboutPageContent();
   const awards: awardsType[] = await getAwards();
   const mailingList: mailingListType[] = await getMailingListCta();
-  const totPromo: TotPromoType[] = await getTotPromo();
+  // const totPromo: TotPromoType[] = await getTotPromo();
   const contactContent: contactType[] = await getContactContent();
 
   const initialAboutPageContent = await loadQuery<SanityDocument>(
@@ -157,9 +157,9 @@ export default async function About() {
         <section>
           <ServiceImageLinkSwiper />
         </section>
-        <section>
+        {/* <section>
           <TotPromo totPromo={totPromo} />
-        </section>
+        </section> */}
         <section className="my-section-gap xsmall:my-section-gap-xsmall small:my-section-gap-small">
           <LatestProjects />
         </section>

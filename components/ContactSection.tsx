@@ -62,6 +62,8 @@ export default function ContactSection({
           /\\n/g,
           " "
         );
+        const addressArr = content.contactUs.address.split(", ");
+
         return (
           <div key={index} className="relative">
             <div className="hidden small:block ml-[-5%] w-[105%] max-h-[5.5px] overflow-hidden small:max-w-[1218px] small:mx-auto">
@@ -127,13 +129,20 @@ export default function ContactSection({
                       );
                     })}
                   </div>
-                  <p className="font-semibold font-headings text-[1.8rem] pt-10 px-4 small:px-0">
-                    {content.contactUs.address}
+                  <p className="font-semibold font-headings text-[1.8rem] pt-10 px-4 small:px-0 leading-[1.4em]">
+                    {addressArr.map((line, i) => (
+                      <span key={i}>
+                        {line}
+                        {i < addressArr.length - 1 && ","}
+                        {i == addressArr.length - 1 && "."}
+                        <br />
+                      </span>
+                    ))}
                   </p>
-                  <p className="font-semibold font-headings text-[1.8rem] pt-2">
+                  <p className="font-semibold font-headings text-[1.8rem] pt-4">
                     {content.contactUs.contactNumber}
                   </p>
-                  <p className="font-semibold font-headings text-[1.8rem] pt-2">
+                  <p className="font-semibold font-headings text-[1.8rem] pt-4">
                     {content.contactUs.emailAddress}
                   </p>
                 </div>

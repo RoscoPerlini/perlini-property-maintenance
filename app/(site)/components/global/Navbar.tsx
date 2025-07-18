@@ -545,6 +545,87 @@ function Navbar() {
                 className="nav-search-form relative flex flex-col justify-center gap-8 xsmall:justify-end xsmall:mr-8 xsmall:gap-4 xsmall:flex-row small:w-fit small:mr-0"
                 // onSubmit={handleSubmit}
               >
+                <div className="button__link__bg__block">
+                  <svg
+                    className={`button__link__svg button__link__svg__small fill-[rgba(230,230,231,0.3)] -z-0 duration-300`}
+                    preserveAspectRatio="none"
+                    viewBox="0 0 175 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M173.229 1V43.2227L162.849 49H1.54785V6.74023L11.8662 1H173.229Z"
+                      stroke="none"
+                      strokeWidth="2"
+                      vectorEffect="non-scaling-stroke"
+                    />
+                  </svg>
+
+                  {/* 200 */}
+                  <svg
+                    className={`button__link__svg button__link__svg__200fill-[rgba(230,230,231,0.3)] -z-0 duration-300`}
+                    preserveAspectRatio="none"
+                    viewBox="0 0 211 51"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M209.389 1.5V43.7178L198.82 49.5H1.38867V7.24512L11.8936 1.5H209.389Z"
+                      stroke="none"
+                      strokeWidth="2"
+                      vectorEffect="non-scaling-stroke"
+                    />
+                  </svg>
+
+                  {/* 300 */}
+                  <svg
+                    className={`button__link__svg button__link__svg__300 fill-[rgba(230,230,231,0.3)] -z-0 duration-300`}
+                    preserveAspectRatio="none"
+                    viewBox="0 0 311 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M310 1V43.2256L299.739 49H1V6.73828L11.2617 1H310Z"
+                      stroke="none"
+                      strokeWidth="2"
+                      vectorEffect="non-scaling-stroke"
+                    />
+                  </svg>
+
+                  {/* 400 */}
+                  <svg
+                    className={`button__link__svg button__link__svg__400 fill-[rgba(230,230,231,0.3)] -z-0 duration-300`}
+                    preserveAspectRatio="none"
+                    viewBox="0 0 401 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M400 1V43.2295L389.876 49H1V6.73828L11.2617 1H400Z"
+                      stroke="none"
+                      strokeWidth="2"
+                      vectorEffect="non-scaling-stroke"
+                    />
+                  </svg>
+
+                  {/* 500 */}
+                  <svg
+                    className={`button__link__svg button__link__svg__500 fill-[rgba(230,230,231,0.3)] -z-0 duration-300`}
+                    preserveAspectRatio="none"
+                    viewBox="0 0 512 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M510.275 1V43.2178L499.707 49H1V6.74512L11.5049 1H510.275Z"
+                      stroke="none"
+                      strokeWidth="2"
+                      vectorEffect="non-scaling-stroke"
+                    />
+                  </svg>
+                </div>
+
                 <div className="flex items-center gap-[1rem]">
                   <div className="xsmall:absolute top-0 left-0 xsmall:left-[3%] h-full w-auto">
                     {/* magnifying glass button */}
@@ -605,7 +686,7 @@ function Navbar() {
                   ref={searchInputRef}
                   value={searchText} // Controlled by searchText state
                   onChange={handleInputChange} // Updates searchText state on change
-                  className="site__search--input p-4 hidden xsmall:block xsmall:bg-[rgba(230,230,231,0.3)] text-left pl-[4.9rem] text-theme-dark rounded-sm w-full  text-[1.4rem] tracking-[0.06em] xsmall:w-[clamp(100px,40vw,323px)] before:absolute before:top-0 before:left-0 before:w-[3rem] before:content-none font-sans small:w-[clamp(150px,15vw,214px)] h-[4.8rem] max-h-[4.8rem] focus:bg-white border-0 focus:ring-0 focus:outline-none transition duration-300 ease-out"
+                  className="site__search--input relative p-4 hidden xsmall:block bg-transparent text-left pl-[4.9rem] text-theme-dark rounded-sm w-full  text-[1.4rem] tracking-[0.06em] xsmall:w-[clamp(100px,40vw,323px)] before:absolute before:top-0 before:left-0 before:w-[3rem] before:content-none font-sans small:w-[clamp(150px,15vw,214px)] h-[4.8rem] max-h-[4.8rem] border-0 focus:ring-0 focus:outline-none transition duration-300 ease-out"
                 />
               </form>
 

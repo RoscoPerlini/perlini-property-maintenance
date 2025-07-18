@@ -3,7 +3,7 @@ import IntroSection from "@/components/IntroSection";
 import Hero from "@/components/Hero";
 import MailingListCta from "@/components/MailingListCta";
 import LatestProjects from "@/components/LatestProjects";
-import TotPromo from "@/components/TotPromo";
+// import TotPromo from "@/components/TotPromo";
 import Testimonials from "@/components/Testimonials";
 import AwardsSection from "@/components/AwardsSection";
 import ContactSection from "@/components/ContactSection";
@@ -22,7 +22,7 @@ import {
   introContent,
   mailingListCta,
   testimonialContent,
-  totPromoContent,
+  // totPromoContent,
 } from "@/sanity/sanity.query";
 import type {
   awardsType,
@@ -100,13 +100,13 @@ export default async function Home() {
       perspective: draftMode().isEnabled ? "previewDrafts" : "published",
     }
   );
-  const initialTotPromo = await loadQuery<SanityDocument>(
-    totPromoContent,
-    {},
-    {
-      perspective: draftMode().isEnabled ? "previewDrafts" : "published",
-    }
-  );
+  // const initialTotPromo = await loadQuery<SanityDocument>(
+  //   totPromoContent,
+  //   {},
+  //   {
+  //     perspective: draftMode().isEnabled ? "previewDrafts" : "published",
+  //   }
+  // );
   const initialTestimonialContent = await loadQuery<SanityDocument>(
     testimonialContent,
     {},

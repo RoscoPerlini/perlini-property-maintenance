@@ -75,7 +75,7 @@ export default function Footer() {
                 placeholder="Email address"
                 buttonText="sign up"
               />
-              <ul className="hidden xsmall:flex justify-center gap-4 small:hidden">
+              {/* <ul className="social__link__buttons hidden xsmall:flex justify-center gap-4 small:hidden">
                 <li>
                   <a
                     href="https://www.facebook.com/roscoandperlini.builders/"
@@ -83,12 +83,21 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     aria-label="Link to our Facebook page"
                   >
-                    <div className="min-h-[4.8rem] aspect-square flex justify-center items-center bg-theme-purple text-white rounded-sm">
+                    <div className="min-h-[4.8rem] relative aspect-square flex justify-center items-center text-white rounded-sm">
+                      <svg
+                        className="nav__bg__svg fill-theme-purple translate-x-[1px] translate-y-[-2px]"
+                        viewBox="0 0 57 57"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M56.408 0V49.8602L45.095 56.0489H6.93661e-06V6.15299L10.911 0H56.408Z"></path>
+                      </svg>
                       <svg
                         width="11"
                         height="24"
                         viewBox="0 0 11 24"
                         fill="none"
+                        className="relative"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
@@ -106,12 +115,21 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     aria-label="Link to our Instagram page"
                   >
-                    <div className="min-h-[4.8rem] aspect-square flex justify-center items-center bg-theme-purple text-white rounded-sm">
+                    <div className="min-h-[4.8rem] relative aspect-square flex justify-center items-center text-white rounded-sm">
+                      <svg
+                        className="nav__bg__svg fill-theme-purple translate-x-[1px] translate-y-[-2px]"
+                        viewBox="0 0 57 57"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M56.408 0V49.8602L45.095 56.0489H6.93661e-06V6.15299L10.911 0H56.408Z"></path>
+                      </svg>
                       <svg
                         width="26"
                         height="26"
                         viewBox="0 0 26 26"
                         fill="none"
+                        className="relative"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <g clipPath="url(#clip0_80_6196)">
@@ -137,7 +155,7 @@ export default function Footer() {
                     </div>
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
 
@@ -152,6 +170,7 @@ export default function Footer() {
                 height="100%"
                 viewBox="0 0 156 54"
                 fill="none"
+                className="relative"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g>
@@ -278,7 +297,7 @@ export default function Footer() {
 
         <div className="small:flex justify-between w-full">
           {/* socials large screen */}
-          <ul className="flex justify-center gap-4 mt-10 xsmall:hidden small:flex small:items-end">
+          {/* <ul className="social__link__buttons flex justify-center gap-4 mt-10 xsmall:hidden small:flex small:items-end">
             <li>
               <a
                 href="https://www.facebook.com/roscoandperlini.builders/"
@@ -286,12 +305,21 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="Link to our Facebook page"
               >
-                <div className="min-h-[4.8rem] aspect-square flex justify-center items-center bg-theme-purple text-white rounded-sm">
+                <div className="relative min-h-[4.8rem] aspect-square flex justify-center items-center  text-white rounded-sm">
+                  <svg
+                    className="nav__bg__svg fill-theme-purple translate-x-[1px] translate-y-[-2px]"
+                    viewBox="0 0 57 57"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M56.408 0V49.8602L45.095 56.0489H6.93661e-06V6.15299L10.911 0H56.408Z"></path>
+                  </svg>
                   <svg
                     width="11"
                     height="24"
                     viewBox="0 0 11 24"
                     fill="none"
+                    className="relative"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -309,12 +337,21 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="Link to our Instagram page"
               >
-                <div className="min-h-[4.8rem] aspect-square flex justify-center items-center bg-theme-purple text-white rounded-sm">
+                <div className="relative min-h-[4.8rem] aspect-square flex justify-center items-center purple text-white rounded-sm">
+                  <svg
+                    className="nav__bg__svg fill-theme-purple translate-x-[1px] translate-y-[-2px]"
+                    viewBox="0 0 57 57"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M56.408 0V49.8602L45.095 56.0489H6.93661e-06V6.15299L10.911 0H56.408Z"></path>
+                  </svg>
                   <svg
                     width="26"
                     height="26"
                     viewBox="0 0 26 26"
                     fill="none"
+                    className="relative"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <g clipPath="url(#clip0_80_6196)">
@@ -340,7 +377,7 @@ export default function Footer() {
                 </div>
               </a>
             </li>
-          </ul>
+          </ul> */}
 
           <h4 className="text-center font-light tracking-[0.02em] text-[1.4rem] mt-16 text-theme-dark small:text-right small:mt-[6rem]">
             {" "}

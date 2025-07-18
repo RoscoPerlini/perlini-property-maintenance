@@ -4,7 +4,7 @@ import MailingListCta from "@/components/MailingListCta";
 import InnerHeroPreview from "@/components/previewComponents/InnerHeroPreview";
 import ProjectsFilterPreview from "@/components/previewComponents/ProjectsFilterPreview";
 import ProjectsFilter from "@/components/ProjectsFilter";
-import TotPromo from "@/components/TotPromo";
+// import TotPromo from "@/components/TotPromo";
 import { removelineBreakCodeFromHTML } from "@/components/utils/lineBreaks";
 import { loadQuery } from "@/sanity/lib/store";
 import {
@@ -13,7 +13,7 @@ import {
   projectsPageContent,
   allProjects,
   getMailingListCta,
-  getTotPromo,
+  // getTotPromo,
   getContactContent,
 } from "@/sanity/sanity.query";
 import type {
@@ -21,7 +21,7 @@ import type {
   mailingListType,
   projectsPageType,
   projectType,
-  TotPromoType,
+  // TotPromoType,
 } from "@/types";
 import { SanityDocument } from "next-sanity";
 import { draftMode } from "next/headers";
@@ -44,7 +44,7 @@ export default async function Projects() {
   const projectsContent: projectsPageType[] = await getProjectsPageContent();
   const projects: projectType[] = await getAllProjects();
   const mailingList: mailingListType[] = await getMailingListCta();
-  const totPromo: TotPromoType[] = await getTotPromo();
+  // const totPromo: TotPromoType[] = await getTotPromo();
   const contactContent: contactType[] = await getContactContent();
 
   const initialProjectsPageContent = await loadQuery<SanityDocument>(
@@ -100,9 +100,9 @@ export default async function Projects() {
           )}
         </section>
 
-        <section className="my-section-gap xsmall:my-section-gap-xsmall small:my-section-gap-small">
+        {/* <section className="my-section-gap xsmall:my-section-gap-xsmall small:my-section-gap-small">
           <TotPromo totPromo={totPromo} />
-        </section>
+        </section> */}
         <section className="my-section-gap hidden xsmall:block xsmall:my-section-gap-xsmall small:my-section-gap-small">
           <MailingListCta content={mailingList} />
         </section>
