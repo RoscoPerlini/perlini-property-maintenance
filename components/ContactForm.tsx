@@ -271,7 +271,7 @@ export default function ContactForm({
           </p>
         )}
       </div>
-      <div className="mt-[3rem]">
+      <div className="mt-[3rem] w-[97.2%]">
         <button
           type="submit"
           className="form__button__link relative block py-[1.1rem] text-white transition duration-300 hover:duration-300 group w-[103%] min-h-[50px]"

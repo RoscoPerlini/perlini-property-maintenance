@@ -545,7 +545,7 @@ function Navbar() {
                 className="nav-search-form relative flex flex-col justify-center gap-8 xsmall:justify-end xsmall:mr-8 xsmall:gap-4 xsmall:flex-row small:w-fit small:mr-0"
                 // onSubmit={handleSubmit}
               >
-                <div className="button__link__bg__block">
+                <div className="button__link__bg__block hidden xsmall:block">
                   <svg
                     className={`button__link__svg button__link__svg__small fill-[rgba(230,230,231,0.3)] -z-0 duration-300`}
                     preserveAspectRatio="none"
@@ -563,7 +563,7 @@ function Navbar() {
 
                   {/* 200 */}
                   <svg
-                    className={`button__link__svg button__link__svg__200fill-[rgba(230,230,231,0.3)] -z-0 duration-300`}
+                    className={`button__link__svg button__link__svg__200 fill-[rgba(230,230,231,0.3)] -z-0 duration-300`}
                     preserveAspectRatio="none"
                     viewBox="0 0 211 51"
                     fill="none"
@@ -626,7 +626,7 @@ function Navbar() {
                   </svg>
                 </div>
 
-                <div className="flex items-center gap-[1rem]">
+                <div className="flex items-center gap-[1rem] z-10">
                   <div className="xsmall:absolute top-0 left-0 xsmall:left-[3%] h-full w-auto">
                     {/* magnifying glass button */}
                     <button
@@ -790,7 +790,7 @@ function Navbar() {
                 {/* form in mobile view */}
                 <form className="xsmall:hidden nav-search-form relative flex justify-end flex-row w-full ">
                   {/* search form icons */}
-                  <div className="flex items-center gap-[1rem] bg-red">
+                  <div className="flex items-center gap-[1rem] z-10">
                     <div className="absolute top-0 left-0 h-full w-auto">
                       {/* magnifying glass button */}
                       <button
