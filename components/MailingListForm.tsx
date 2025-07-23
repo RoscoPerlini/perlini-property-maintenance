@@ -246,6 +246,24 @@ export default function MailingListForm({
           {/* small */}
 
           <svg
+            className={`button__link__svg button__link__svg__extra__small -z-0 duration-300 ${
+              theme == "dark" ? "fill-theme-purple" : " fill-white"
+            }`}
+            preserveAspectRatio="none"
+            viewBox="0 0 115 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M114.019 0V43.8113L102.706 50H0V6.15299L11.2496 0L114.019 0Z"
+              stroke="currentColor"
+              strokeWidth="2"
+              vectorEffect="non-scaling-stroke"
+              className={`duration-300`}
+            />
+          </svg>
+
+          <svg
             className={`button__link__svg button__link__svg__small -z-0 duration-300 ${
               theme == "dark" ? "fill-theme-purple" : " fill-white"
             }`}
