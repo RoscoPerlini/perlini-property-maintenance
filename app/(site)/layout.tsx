@@ -31,7 +31,7 @@ const opensans = Open_Sans({
 export async function Metadata() {
   const hero: heroType[] = await getHero();
   return {
-    title: "Perlini Property Management",
+    title: "Perlini Property Maintenance",
     description: removelineBreakCodeFromHTML(hero[0].heroHeading[0]),
     openGraph: {
       images: thumbnail.src,

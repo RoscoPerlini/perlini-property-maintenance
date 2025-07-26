@@ -30,7 +30,7 @@ interface Faq {
 export async function metadata() {
   const faqPageContent: faqPageType[] = await getFaqPageContent();
   return {
-    title: `Perlini Property Management | ${faqPageContent[0]?.FaqPage?.pageMetadata?.pageTitle || "FAQ's page"}`,
+    title: `Perlini Property Maintenance | ${faqPageContent[0]?.FaqPage?.pageMetadata?.pageTitle || "FAQ's page"}`,
 
     description:
       faqPageContent[0]?.FaqPage?.pageMetadata?.pageDescription ||

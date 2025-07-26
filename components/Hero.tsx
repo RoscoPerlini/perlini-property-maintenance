@@ -16,7 +16,7 @@ export default function Hero({ content }: { content: heroType[] }) {
             </h1>
             <div>
               <p className="homepage__hero__company__name font-bold text-[1.6rem] font-body mb-[0.4em]">
-                Perlini Property Management
+                Perlini Property Maintenance
               </p>
               <h1 className="font-bold xsmall:text-[clamp(2.8rem,4.3vw,3.6rem)] small:text-[clamp(2.7rem,3.1vw,4rem)]">
                 {getTextWithLineBreaks(content[0].heroHeading)}

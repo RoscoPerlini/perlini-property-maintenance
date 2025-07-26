@@ -30,7 +30,7 @@ import { Suspense } from "react";
 export async function metadata() {
   const projectsContent: projectsPageType[] = await getProjectsPageContent();
   return {
-    title: `Perlini Property Management | ${projectsContent[0]?.ProjectsPage?.pageMetadata?.pageTitle || "Projects"}`,
+    title: `Perlini Property Maintenance | ${projectsContent[0]?.ProjectsPage?.pageMetadata?.pageTitle || "Projects"}`,
     description:
       projectsContent[0]?.ProjectsPage?.pageMetadata?.pageDescription ||
       removelineBreakCodeFromHTML(projectsContent[0].ProjectsPage.pageHeading),
